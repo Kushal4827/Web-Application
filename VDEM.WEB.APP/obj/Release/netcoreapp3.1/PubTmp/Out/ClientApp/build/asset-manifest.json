@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a343b76.css",
+    "main.js": "/static/js/main.47dfb4e9.js",
+    "static/media/Toyota-Logo.png": "/static/media/Toyota-Logo.4b67aaaa16fa64cb0571.png",
+    "static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2": "/static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.fad2a547f18821b21f1f.woff2",
+    "static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2": "/static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.5eb4a7768219776c5b91.woff2",
+    "static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2": "/static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.47734aec6134293ca791.woff2",
+    "static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7SUc.woff2": "/static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7SUc.3a3cf1a02598263f2457.woff2",
+    "static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2": "/static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.fbe36d91b8952a12c592.woff2",
+    "static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7SUc.woff2": "/static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7SUc.23292101a34e08657a5d.woff2",
+    "static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7SUc.woff2": "/static/media/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7SUc.74fe938ab12d800f4385.woff2",
+    "index.html": "/index.html",
+    "main.6a343b76.css.map": "/static/css/main.6a343b76.css.map",
+    "main.47dfb4e9.js.map": "/static/js/main.47dfb4e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a343b76.css",
+    "static/js/main.47dfb4e9.js"
+  ]
+}

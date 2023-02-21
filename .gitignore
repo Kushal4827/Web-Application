@@ -1,0 +1,36 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/VDEM.Lib.BusinessLogic/obj
+/VDEM.Lib.BusinessLogic/bin/Debug/netcoreapp3.1
+/VDEM.Lib.Database/obj
+/VDEM.Lib.Database/bin/Debug/netcoreapp3.1
+/VDEM.Mobile/obj
+/VDEM.Mobile/bin/Debug/netstandard2.0
+/VDEM.Mobile.Android/obj
+/VDEM.Mobile.Android/bin/Debug
+/VDEM.Lib.Interface/obj
+/VDEM.Lib.Interface/bin/Debug/netcoreapp3.1
+/VDEM.Mobile.iOS/obj
+/VDEM.Mobile.iOS/bin/iPhoneSimulator/Debug
+/VDEM.Mobile.UWP/obj
+/VDEM.Mobile.UWP/bin/x86/Debug
+/VDEM.WPF.Test/obj
+/VDEM.Lib.BusinessLogic/bin/Release/netcoreapp3.1
+/VDEM.Lib.Database/bin/Release/netcoreapp3.1
+/VDEM.Lib.Interface/bin/Release/netcoreapp3.1
+/VDEM.WEB.APP/.config
+/.vs
+/VDEM.WEB.APP/VDEM/VDEMImages/MasterImages/Line Name/CheckItemImages
+/VDEM.WEB.APP/VDEM/VDEMImages/MasterImages
+/VDEM.WEB.APP/ClientApp/.vscode
+/VDEM.Mobile/bin/Release/netstandard2.0
+/VDEM.Mobile.Android/bin/Release
+/VDEM.WEB.APP/VDEM/VDEMImages/DefectImages
+/VDEM.Lib.Reporting/bin/Debug
+/VDEM.WEB.APP/VDEM/VDEMImages/DefectImagesOld
+/VDEM.Lib.BusinessLogic/VDEM.Lib.BusinessLogic.csproj.user
+/VDEM.WEB.APP/VDEM
+.vscode/launch.json
+.vscode/tasks.json
