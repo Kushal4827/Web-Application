@@ -384,7 +384,11 @@ class TkmAppDetails extends Component {
             </div>
             <div className="col-lg-2">
               <Link to="/AddPage" className="nav-link">
-                <button type="button" id="Addbtn">
+                <button
+                  type="button"
+                  id="Addbtn"
+                  className="btn btn-grey  border-0"
+                >
                   ADD
                 </button>
               </Link>
@@ -447,7 +451,7 @@ class TkmAppDetails extends Component {
                 <thead style={{ height: "7rem" }}>
                   <tr className="text-black">
                     <td style={{ verticalAlign: "top" }}>
-                      SYSTEM LNKS
+                      SYSTEM LINKS
                       <br />
                       <hr />
                       PRODUCTION LINK:{" "}

@@ -11,6 +11,7 @@ class AddPage extends Component {
       AddAppDetailsIP: [],
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.onClickClear = this.onClickClear.bind(this);
   }
 
   handleInputChange = (event) => {
@@ -84,6 +85,11 @@ class AddPage extends Component {
       }
     );
   }
+
+  onClickClear() {
+    window.location.reload();
+  }
+
   Reload() {
     window.location.reload();
   }
@@ -100,12 +106,7 @@ class AddPage extends Component {
   render() {
     return (
       <>
-        <div
-          className="row w-100"
-          style={{
-            borderBlock: "1px solid black",
-          }}
-        >
+        <div className="row w-100" style={{ borderBlock: "1px solid black" }}>
           <div className="col-lg-6">
             <h4 className="mt-2">Manufacturing Systems</h4>
           </div>
@@ -113,186 +114,191 @@ class AddPage extends Component {
           <div className="col-lg-2">
             <img
               src={logo1}
-              alt={"logo1"}
+              alt={"Toyota"}
               width="170"
               className="img-fluid"
               style={{ marginTop: "8px", marginLeft: "30px" }}
             />
           </div>
-
-          <hr
-            style={{
-              background: "black",
-              height: "2px",
-              border: "none",
-            }}
-          />
-          <div className="col-lg-12">
-            <h5 className="mt-2">Add TKM App Details</h5>
-          </div>
         </div>
-
+        <div className="row mt-2">
+          <h5> App Details Edit Screen</h5>
+          <hr />
+        </div>
         <form onSubmit={this.handleInputChange}>
-          <div className="row">
-            <div className="col-lg-4 mt-5">
-              <div className="form-row">
-                <div className="row">
-                  <label htmlFor="syscategory">
-                    System Category :<b style={{ color: "red" }}>*</b>
-                  </label>
-                  <select id="syscategory" className="form-control" required>
-                    <option disabled selected value>
-                      ---Select---
-                    </option>
-                    <option>Local</option>
-                    <option>Regional</option>
-                    <option>Global</option>
-                    <option>Engineering system</option>
-                  </select>
-                </div>
-                <br />
-                <div className="row">
-                  <label htmlFor="system">
-                    System : <b style={{ color: "red" }}>*</b>
-                  </label>
-                  <input
-                    type="text"
-                    id="system"
-                    className="form-control"
-                    placeholder="System"
-                    required
-                  />
-                </div>
-                <br />
+          <div className="row m-1">
+            <div className="form-group col-md-3 ">
+              <label htmlFor="syscategory">
+                System Category :<b style={{ color: "red" }}>*</b>
+              </label>
+              <select id="syscategory" className="form-control" required>
+                <option disabled selected value>
+                  ---Select---
+                </option>
+                <option>Local</option>
+                <option>Regional</option>
+                <option>Global</option>
+                <option>Engineering system</option>
+              </select>
+            </div>
+            <div className="form-group col-md-3">
+              <label htmlFor="system">
+                System : <b style={{ color: "red" }}>*</b>
+              </label>
+              <input
+                type="text"
+                id="system"
+                className="form-control"
+                placeholder="System"
+                required
+              />
+            </div>
+            <div className="form-group col-md-6">
+              <label htmlFor="testlink">
+                Purpose : <b style={{ color: "red" }}>*</b>
+              </label>
+              <input
+                type="text"
+                id="purpose"
+                className="form-control"
+                placeholder="Purpose"
+                required
+              />
+            </div>
+          </div>
 
-                <div className="col">
-                  <label htmlFor="prodlink">Production Link :</label>
-                  <input
-                    type="text"
-                    id="prodlink"
-                    className="form-control"
-                    placeholder="Production Link"
-                  />
-                </div>
-                <br />
-                <div className="col">
-                  <label htmlFor="testlink">
-                    Purpose : <b style={{ color: "red" }}>*</b>
-                  </label>
-                  <input
-                    type="text"
-                    id="purpose"
-                    className="form-control"
-                    placeholder="Purpose"
-                    required
-                  />
-                </div>
-                <br />
-              </div>
+          <div className="row mt-3">
+            <div className="form-group col-md-6 ">
+              <label htmlFor="prodlink">Production Link :</label>
+              <input
+                type="text"
+                id="prodlink"
+                className="form-control"
+                placeholder="Production Link"
+              />
             </div>
-            <div className="col-lg-4 mt-5">
-              <div className="form-row">
-                <div className="col">
-                  <label htmlFor="testlink">Test Link :</label>
-                  <input
-                    type="text"
-                    id="testlink"
-                    className="form-control"
-                    placeholder="Test Link"
-                  />
-                </div>
-                <br />
-                <div className="col">
-                  <label htmlFor="syscategory">
-                    Primary support Email : <b style={{ color: "red" }}>*</b>
-                  </label>
-                  <input
-                    type="text"
-                    id="psemail"
-                    className="form-control"
-                    placeholder="Primary support Email "
-                    required
-                  />
-                </div>
-                <br />
-                <div className="col">
-                  <label htmlFor="system">
-                    Primary support phone : <b style={{ color: "red" }}>*</b>{" "}
-                  </label>
-                  <input
-                    type="text"
-                    id="psphone"
-                    className="form-control"
-                    placeholder="Primary support phone"
-                    required
-                  />
-                </div>
-                <br />
-                <div className="col">
-                  <label htmlFor="syslink">Primary support Teams :</label>
-                  <input
-                    type="text"
-                    id="psteams"
-                    className="form-control"
-                    placeholder="Primary support Teams"
-                  />
-                </div>
-                <br />
-              </div>
+            <div className="form-group col-md-6">
+              <label htmlFor="testlink">Test Link :</label>
+              <input
+                type="text"
+                id="testlink"
+                className="form-control"
+                placeholder="Test Link"
+              />
             </div>
-            <div className="col-lg-4 mt-5">
-              <div className="form-row">
-                <div className="col">
-                  <label htmlFor="prodlink"> Secondary support Email:</label>
-                  <input
-                    type="text"
-                    id="ssemail"
-                    className="form-control"
-                    placeholder="Secondary support Email"
-                  />
-                </div>
-                <br />
-                <div className="col">
-                  <label htmlFor="testlink">Secondary support Phone:</label>
-                  <input
-                    type="text"
-                    id="ssphone"
-                    className="form-control"
-                    placeholder="Secondary support Phone"
-                  />
-                </div>
-              </div>
-              <br />
-              <div className="col">
-                <label htmlFor="testlink">Secondary support Teams:</label>
-                <input
-                  type="text"
-                  id="ssteams"
-                  className="form-control"
-                  placeholder="Secondary support Teams"
-                />
-              </div>
-              <br />
-            </div>
+          </div>
 
-            <div className="row"></div>
-            <div className="col-md-2 mb-4"></div>
-            <div className="col-md-2 mb-4">
-              <button
-                className="btn btn-grey"
-                onClick={this.props.history.goBack}
-              >
-                Back
-              </button>
+          <label className="mt-4 p-2"> FIRST LINE SUPPORT:</label>
+          <div className="row mt-1">
+            <div className="form-group col-md-4 ">
+              <label htmlFor="PrimaryMail">
+                PrimaryMail <b style={{ color: "red" }}>*</b>
+              </label>
+              <input
+                type="text"
+                id="psemail"
+                className="form-control"
+                placeholder="Primary support Email "
+                required
+              />
             </div>
-            <div className="col-md-4 mb-4"></div>
-            <div className="col-md-4 mb-4">
-              <button type="submit" className="btn btn-grey">
-                Submit
-              </button>
+            <div className="col-md-3">
+              <label htmlFor="PrimaryPhone">
+                PrimaryPhone <b style={{ color: "red" }}>*</b>
+              </label>
+              <input
+                type="text"
+                id="psphone"
+                className="form-control"
+                placeholder="Primary support phone"
+                required
+              />
             </div>
+            <div className="form-group col-md-3">
+              <label htmlFor="PrimaryTeams">PrimaryTeams</label>
+              <input
+                type="text"
+                id="psteams"
+                className="form-control"
+                placeholder="Primary support Teams"
+              />
+            </div>
+          </div>
+
+          <label className="form-label mt-4 p-2">
+            {" "}
+            SECOND LEVEL ESCALATION:
+          </label>
+          <div className="row mt-1">
+            <div className="form-group col-md-4 ">
+              <label htmlFor="SecondaryMail">SecondaryMail</label>
+              <input
+                type="text"
+                id="ssemail"
+                className="form-control"
+                placeholder="Secondary support Email"
+              />
+            </div>
+            <div className="form-group col-md-3">
+              <label htmlFor="SecondaryPhone">SecondaryPhone</label>
+              <input
+                type="text"
+                id="ssphone"
+                className="form-control"
+                placeholder="Secondary support Phone"
+              />
+            </div>
+            <div className="form-group col-md-3">
+              <label htmlFor="SecondaryTeams">SecondaryTeams</label>
+              <input
+                type="text"
+                id="ssteams"
+                className="form-control"
+                placeholder="Secondary support Teams"
+              />
+            </div>
+          </div>
+
+          <div className="row mt-4">
+            <div className="col-md-1"></div>
+            <button
+              type="button"
+              className="btn btn-grey col-md-2 border-0"
+              onClick={this.props.history.goBack}
+            >
+              Back
+            </button>
+
+            <div className="col-md-2"></div>
+            <button
+              type="button"
+              className="btn btn-grey col-md-2 border-0"
+              onClick={this.onClickClear}
+            >
+              Clear
+            </button>
+
+            <div className="col-md-2"></div>
+            <button type="submit" className="btn btn-grey col-md-2 border-0">
+              Submit
+            </button>
           </div>
         </form>
+        <div
+          className="col-lg-12"
+          style={{
+            border: "1px solid black",
+            position: "absolute",
+            bottom: "0px",
+            width: "100 %",
+            textAlign: "center",
+          }}
+        >
+          <h5 className="mt-2">
+            System Development Department 1 <br /> Toyota Kirloskar Motors
+            Pvt.Ltd{" "}
+          </h5>
+        </div>
       </>
     );
   }
